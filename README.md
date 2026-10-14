@@ -10,9 +10,14 @@ Or inside a session: `/plugin marketplace add gclbck-crealore/gclbck-crealore-mo
 
 ## Mods
 
+| Mod | What it does | Install |
+|---|---|---|
+| [**is-it-done-yet**](#is-it-done-yet) | A progress pane beside the terminal: percent done, phases and tasks, time, tokens and API cost, read from your project's plan file or the agent's task list. | `claude plugin install is-it-done-yet@gclbck-crealore-mods` |
+| [**session-handoff-button**](#session-handoff-button) | A Session Hand-off button above the prompt, coloured by context usage; one press writes a handoff, clears and continues in a fresh session. | `claude plugin install session-handoff-button@gclbck-crealore-mods` |
+
 ### is-it-done-yet
 
-<img src="https://raw.githubusercontent.com/gclbck-crealore/is-it-done-yet-mod/main/docs/hero.png" alt="is-it-done-yet: a docked progress pane beside the Claude Code terminal" width="640">
+<img src="https://raw.githubusercontent.com/gclbck-crealore/is-it-done-yet-mod/main/docs/hero.png" alt="is-it-done-yet: a docked progress pane beside the Claude Code terminal" width="420">
 
 A progress pane for long, multi-phase agent work. In a project that already has a plan (`PLAN.md`, `ROADMAP.md`, `TODO.md`, a superpowers or GSD plan) it opens beside the terminal and shows percent done, phases and tasks with green/blue/grey bars, elapsed time, a rough ETA, tokens and the API-equivalent cost. Reach L1 (reads plan files inside the project), nothing added to the model's context.
 
