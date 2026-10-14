@@ -14,9 +14,17 @@
         "url": "https://github.com/gclbck-crealore/is-it-done-yet-mod.git",
         "path": "is-it-done-yet"
       },
-      "description": "A progress pane beside the Claude Code terminal for big, multi-phase work. Open it in any existing project and it reads the project's plan file (PLAN.md, ROADMAP.md, TODO.md, docs/superpowers/plans, checkbox lists or status tables) or the agent's task list, then shows overall percent, an accordion of phases and tasks with green/blue/grey bars, elapsed time, a rough ETA, total tokens and the API-equivalent cost. Adds nothing to the model's context. Reach L1: reads plan files inside the project folder and the transcript's task calls; no processes, environment variables or network.",
+      "description": "A progress pane beside the Claude Code terminal for big, multi-phase work. Open it in any existing project: it looks through the folder's markdown files, finds the plan, checklist or progress note by reading what they say (no file names built in), or uses the agent's task list, then shows overall percent, an accordion of phases and tasks with green/blue/grey bars, elapsed time, a rough ETA, total tokens and the API-equivalent cost. Adds nothing to the model's context. Reach L1: reads the project's markdown files and the transcript's task calls; no processes, environment variables or network.",
       "category": "productivity",
-      "tags": ["mods", "progress", "plan", "tasks", "pane", "cost", "tokens"]
+      "tags": [
+        "mods",
+        "progress",
+        "plan",
+        "tasks",
+        "pane",
+        "cost",
+        "tokens"
+      ]
     },
     {
       "name": "session-handoff-button",
@@ -27,7 +35,13 @@
       },
       "description": "A Session Hand-off button above the prompt, green/orange/red by context usage (45% and 65% thresholds). While green it reads Context clean and cannot be pressed; from orange on, one press runs your handoff skill (or a built-in prompt), copies the handoff, runs /clear and sends it to the fresh session. Reach L2: drives Claude (one handoff turn, /clear, one prompt); no processes, files or network.",
       "category": "productivity",
-      "tags": ["mods", "context", "handoff", "session", "status"]
+      "tags": [
+        "mods",
+        "context",
+        "handoff",
+        "session",
+        "status"
+      ]
     }
   ]
 }
