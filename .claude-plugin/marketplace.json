@@ -33,7 +33,7 @@
         "url": "https://github.com/gclbck-crealore/session-handoff-button-mod.git",
         "path": "session-handoff-button"
       },
-      "description": "A Session Hand-off button above the prompt, green/orange/red by context usage (45% and 65% thresholds). While green it reads Context clean and cannot be pressed; from orange on, one press runs your handoff skill (or a built-in prompt), copies the handoff, runs /clear and sends it to the fresh session. Reach L2: drives Claude (one handoff turn, /clear, one prompt); no processes, files or network.",
+      "description": "A Session Hand-off button above the prompt, green/orange/red by context usage (45% and 65% thresholds). While green it reads Context clean and cannot be pressed; from orange on, one press runs your handoff skill (or a built-in prompt), saves the handoff to a temp .md, runs /clear and continues in the fresh session with a short message, the handoff riding along as hidden context, so nothing is pasted on screen. Past 65% it stops your next prompt once and recommends the button. Reach L2: drives Claude (one handoff turn, /clear, one prompt); writes one temp file per handoff; no processes or network.",
       "category": "productivity",
       "tags": [
         "mods",

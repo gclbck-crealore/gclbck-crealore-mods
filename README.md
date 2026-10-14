@@ -13,7 +13,7 @@ Or inside a session: `/plugin marketplace add gclbck-crealore/gclbck-crealore-mo
 | Mod | What it does | Install |
 |---|---|---|
 | [**is-it-done-yet**](#is-it-done-yet) | A progress pane beside the terminal: percent done, phases and tasks, time, tokens and API cost, read from your project's markdown plan or progress notes, or the agent's task list. | `claude plugin install is-it-done-yet@gclbck-crealore-mods` |
-| [**session-handoff-button**](#session-handoff-button) | A Session Hand-off button above the prompt, coloured by context usage; one press writes a handoff, clears and continues in a fresh session. | `claude plugin install session-handoff-button@gclbck-crealore-mods` |
+| [**session-handoff-button**](#session-handoff-button) | A Session Hand-off button above the prompt, coloured by context usage; one press writes a handoff, clears and continues in a fresh session, with nothing pasted on screen. Past 65% it warns once. | `claude plugin install session-handoff-button@gclbck-crealore-mods` |
 
 ### is-it-done-yet
 
@@ -29,7 +29,7 @@ Source and guide: [gclbck-crealore/is-it-done-yet-mod](https://github.com/gclbck
 
 ### session-handoff-button
 
-A **Session Hand-off** button above the prompt that changes colour as the context window fills (green, orange, red). One press writes a handoff, copies it, runs `/clear` and continues in a fresh session. Reach L2 (drives Claude: one handoff turn, `/clear`, one prompt).
+A **Session Hand-off** button above the prompt that changes colour as the context window fills (green, orange, red). One press writes a handoff, saves it to a temp `.md`, runs `/clear` and continues in a fresh session: you see one short message while the handoff goes in as hidden context. Past 65% it stops your next prompt once and recommends the button. Reach L2 (drives Claude: one handoff turn, `/clear`, one prompt; writes one temp file per handoff).
 
 ```sh
 claude plugin install session-handoff-button@gclbck-crealore-mods
